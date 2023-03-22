@@ -11,7 +11,7 @@
     </a-row>
 
     <a-row>
-      <div @click="clickMessage(2)" style="background: #eee;">
+      <div @click="clickMessage(2)" style="background: #eee">
         <a-button @click.stop="clickMessage('stop')">stop修饰符</a-button>
         <a-button @click.self="clickMessage('self')">self修饰符</a-button>
         <a-button @click.once="clickMessage('once')">once修饰符</a-button>

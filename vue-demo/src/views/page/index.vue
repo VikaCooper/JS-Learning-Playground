@@ -20,7 +20,7 @@ export default {
   name: 'Page',
   components: {
     HelloWorld,
-    'a-button': Button
+    'a-button': Button,
   },
   provide() {
     return {
@@ -35,9 +35,9 @@ export default {
   mounted() {
     // this.$tip({msg: 'hello world'})
   },
-  errorCaptured(err,vm,info) {
-    console.log(`cat EC: ${err.toString()}\ninfo: ${info}`);
-    return false;
+  errorCaptured(err, vm, info) {
+    console.log(`cat EC: ${err.toString()}\ninfo: ${info}`)
+    return false
   },
   activated() {
     console.log('page has been activated')
@@ -56,7 +56,7 @@ export default {
     },
     back() {
       this.$router.push('/')
-    }
+    },
   },
 }
 </script>

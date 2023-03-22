@@ -2,7 +2,7 @@
  * Created by cooper on 2023/2/24.
  */
 import InterceptorManage from './InterceptorManage'
-import { interceptors } from "axios"
+import { interceptors } from 'axios'
 
 class MyAxios {
   constructor(options) {
@@ -16,18 +16,18 @@ class MyAxios {
     // 拦截器和请求组装队列
     const chain = [this.sendAjax.bind(this), undefined] // 成对出现的，失败回调暂时不处理
 
-    this.interceptors.request.handlers.forEach(interceptor => {
+    this.interceptors.request.handlers.forEach((interceptor) => {
       chain.unshift(interceptor.fullfield, interceptor.rejected)
     })
-    this.interceptors.response.handlers.forEach(interceptor => {
+    this.interceptors.response.handlers.forEach((interceptor) => {
       chain.push(interceptor.fullfield, interceptor.rejected)
     })
 
     let promise = Promise.resolve(options)
-    while(chain.length > 0) {
+    while (chain.length > 0) {
       promise = promise.then(chain.shift(), chain.shift())
     }
-    return promise;
+    return promise
   }
 
   sendAjax(options) {

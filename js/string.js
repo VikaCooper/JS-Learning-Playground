@@ -3,9 +3,9 @@
  */
 let s = 'abcdefg'
 
-console.log(s.slice(1,5))
-console.log(s.substring(1,5))
-console.log(s.substr(1,5))
+console.log(s.slice(1, 5))
+console.log(s.substring(1, 5))
+console.log(s.substr(1, 5))
 
 let s1 = ' 12345 2'
 console.log(s1.trim())

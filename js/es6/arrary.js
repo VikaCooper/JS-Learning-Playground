@@ -48,17 +48,15 @@ console.log(
   })
 )
 
-console
-  .log(
-    [1, 2, 3].flatMap((item) => {
-      return [item, item * 2]
-    })
-  )
+console.log(
+  [1, 2, 3].flatMap((item) => {
+    return [item, item * 2]
+  })
+)
 
-b = [1,2,3]
-b.splice(1,1,100)
+b = [1, 2, 3]
+b.splice(1, 1, 100)
 console.log(b)
 
-
-c = b.slice(0,1)
+c = b.slice(0, 1)
 console.log(c)

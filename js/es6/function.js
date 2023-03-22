@@ -1,7 +1,7 @@
 /**
  * Created by cooper on 2023/3/10.
  */
-const { printAnything } = require('../util')
+import { printAnything } from '../util.js'
 
 function fn(v) {
   return v

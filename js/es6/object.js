@@ -2,8 +2,7 @@
  * Created by cooper on 2023/3/10.
  */
 
-// import { printAnything } from '../util.js'
-const { printAnything } = require('../util')
+import { printAnything } from '../util.js'
 
 // 剩余参数解构赋值，扩展运算符必须放最后
 const obj = { x: 1, y: 2, z: 3, m: 5, [Symbol()]: 6 }
@@ -53,10 +52,10 @@ const obj1 = {
 
   print() {
     console.log(super.foo)
-  }
+  },
 }
 
 obj1.print()
 
-Object.setPrototypeOf(obj1, {foo: 'hello'})
+Object.setPrototypeOf(obj1, { foo: 'hello' })
 obj1.print()

@@ -12,13 +12,13 @@ const p = new Promise((resolve, reject) => {
 })
 
 p.then((val) => {
-  console.log("[then]: ", val)
+  console.log('[then]: ', val)
 })
   .catch((err) => {
-    console.log("[catch]: ", err)
+    console.log('[catch]: ', err)
   })
   .finally(() => {
-    console.log("[finally]: excuted")
+    console.log('[finally]: excuted')
   })
 
 const p1 = new Promise((resolve) => {
@@ -34,24 +34,24 @@ const promises = [p1, p2, p3]
 
 Promise.all(promises)
   .then((res) => {
-    console.log("[all]:  ", res)
+    console.log('[all]:  ', res)
   })
   .catch((err) => {
-    console.log("[all]:  ", err)
+    console.log('[all]:  ', err)
   })
 
 Promise.race(promises).then((res) => {
-  console.log("[race]: ", res)
+  console.log('[race]: ', res)
 })
 
 Promise.allSettled(promises).then((res) => {
-  console.log("[allSettled]: ", res)
+  console.log('[allSettled]: ', res)
 })
 
 Promise.resolve(1).then((res) => {
-  console.log("[resolve]: ", res)
+  console.log('[resolve]: ', res)
 })
 
-Promise.reject("reason").catch((err) => {
-  console.log("[reject]: ", err)
+Promise.reject('reason').catch((err) => {
+  console.log('[reject]: ', err)
 })

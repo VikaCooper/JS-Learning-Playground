@@ -23,7 +23,7 @@ const constDemo = () => {
   try {
     const c = 2
     c = 3
-    const d = {x:1}
+    const d = { x: 1 }
     console.log(d)
     d.x = 2
     console.log(d)
@@ -36,5 +36,3 @@ varDemo()
 console.log(a)
 letDemo()
 constDemo()
-
-

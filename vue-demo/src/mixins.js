@@ -4,7 +4,7 @@
 const mixins = {
   created() {
     // console.log('[mixins] created')
-  }
+  },
 }
 
 export default mixins

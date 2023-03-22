@@ -8,4 +8,4 @@ const printAnything = (...args) => {
     }
   }
 }
-module.exports = { printAnything }
+export { printAnything }

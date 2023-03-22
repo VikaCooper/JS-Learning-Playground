@@ -8,7 +8,7 @@ import navigator from '@/views/navigator'
 const routes = [
   {
     path: '/',
-    redirect: '/navigator'
+    redirect: '/navigator',
   },
   {
     component: page1,
@@ -23,8 +23,8 @@ const routes = [
   {
     component: navigator,
     path: '/navigator',
-    name: 'navigator'
-  }
+    name: 'navigator',
+  },
 ]
 
 const router = new Router({

@@ -7,7 +7,6 @@ import mixins from './mixins'
 import VueRouter from 'vue-router'
 Vue.config.productionTip = false
 
-
 // 挂载事件总线到vue实例
 Vue.prototype.$bus = new Bus()
 

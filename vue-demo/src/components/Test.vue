@@ -1,7 +1,7 @@
 <template>
   <div>
-    <div>{{msgToTest}}</div>
-    <div>{{providedMsg}}</div>
+    <div>{{ msgToTest }}</div>
+    <div>{{ providedMsg }}</div>
     <button @click="sendToApp">传递给APP</button>
   </div>
 </template>
@@ -15,19 +15,18 @@ export default {
     providedMsg: {
       from: 'msg',
       default: 'NO DATA',
-    }
+    },
   },
   data() {
     return {
-      providedMsg: this.providedMsg
+      providedMsg: this.providedMsg,
     }
   },
   created() {
     this.$bus.$on('button-click', this.clickHandler)
     this.$root.$on('click-button-in-hello-world', this.clickHandler4Brother)
   },
-  mounted() {
-  },
+  mounted() {},
   methods: {
     clickHandler(msg) {
       console.log('[Test]: ', msg)
@@ -37,7 +36,7 @@ export default {
     },
     sendToApp() {
       this.$emit('test-button-click')
-    }
+    },
   },
 }
 </script>
