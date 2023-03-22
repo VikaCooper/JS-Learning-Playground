@@ -57,6 +57,15 @@
 - 你是怎么处理 vue 项目中的错误的？
 - Vue3 有了解过吗？能说说跟 Vue2 的区别吗？
 
+#### Vue3系列
+- Vue3.0的设计目标是什么？做了哪些优化
+- Vue3.0性能提升主要是通过哪几方面体现的？
+- Vue3.0里为什么要用 Proxy API 替代 defineProperty API ？
+- Vue3.0 所采用的 Composition Api 与 Vue2.x 使用的 Options Api 有什么不同？
+- 说说Vue 3.0中Treeshaking特性？举例说明一下？
+- 用Vue3.0 写过组件吗？如果想实现一个 Modal你会怎么设计？
+
+
 #### ES6
 
 - [说说 var、let、const 之间的区别](./js/es6/variable.js)
