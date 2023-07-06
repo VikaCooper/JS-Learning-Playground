@@ -37,7 +37,7 @@ Promise.all(promises)
     console.log('[all]:  ', res)
   })
   .catch((err) => {
-    console.log('[all]:  ', err)
+    console.log('[all err]:  ', err)
   })
 
 Promise.race(promises).then((res) => {
@@ -55,3 +55,6 @@ Promise.resolve(1).then((res) => {
 Promise.reject('reason').catch((err) => {
   console.log('[reject]: ', err)
 })
+
+
+

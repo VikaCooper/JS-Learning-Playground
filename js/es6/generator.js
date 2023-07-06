@@ -1,7 +1,8 @@
 /**
  * Created by cooper on 2023/3/20.
  */
-const { printAnything } = require('../util')
+// const { printAnything } = import('../util')
+import { printAnything } from "../util.js"
 
 function* helloWorldGenerator() {
   yield 'hello'
@@ -13,13 +14,13 @@ const hw = helloWorldGenerator()
 
 printAnything(hw, hw.next(), hw.next(), hw.next())
 
-function* foo(x) {
+function* foo1(x) {
   const y = 2 * (yield x + 1)
   const z = yield y / 3
   return x + y + z
 }
 
-const a = foo(5)
+const a = foo1(5)
 
 printAnything(
   // x: 5, y: 12, z: undefined
@@ -94,3 +95,18 @@ printAnything(
   f.next(),
   f.next()
 )
+function* gen() {
+  const num1 = yield 1
+  console.log('num1: ',num1)
+  const num2 = yield 2
+  console.log('num2: ', num2)
+  return 3
+}
+const g = gen()
+console.log(g.next()) // { value: 1, done: false }
+console.log(g.next())
+// 11111
+//  { value: 2, done: false }
+console.log(g.next(22222))
+// 22222
+// { value: 3, done: true }
