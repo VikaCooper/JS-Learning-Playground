@@ -2,6 +2,79 @@
 
 ### 进度管理
 
+### 2023/07/20
+## Vue
+### 优先级：高
+- 生命周期的理解：✅
+- Vue实例挂载的过程：✅
+- 通信方式：✅
+- 双向绑定：✅
+- Diff算法和虚拟DOM：✅
+- Key的理解：✅
+- Vue3和Vue2的区别： ✅
+- Proxy和defineProperties的区别：✅
+### 优先级：中低
+- 自定义指令： ✅
+- data为什么不是对象： ✅
+- v-if和v-show的区别：✅
+- nextTick的理解：✅
+
+## ES6
+- Promise和async/await：✅
+- 手写Promise和async/await：✅
+- Proxy理解：✅
+- var、let、const：✅
+- 数组和对象的扩展：✅
+- Set和Map的理解：✅
+- Generator理解：✅
+## JS
+- 类型转换：✅
+- toPrimitive、valueOf、toString和转换算法：✅
+- 原型链和作用域链：✅
+- 继承：✅
+- new关键字原理：✅
+- this的指向：✅
+- bind、call、apply区别：✅
+- 本地存储方式cookie、sessionStorage、localStorage的区别：✅
+- 宏任务和微任务(事件循环)：✅
+- 事件代理、事件模型：✅
+- 深拷贝和浅拷贝：✅
+- 闭包：✅
+- 垃圾回收机制：✅
+- 防抖和节流：✅
+- 模块化：✅
+
+
+## CSS
+- 盒子模型：✅
+- 选择器有哪些：✅
+- 像素单位em、rem、vh、vw、px：✅
+- BFC的理解：✅
+- 水平垂直居中：✅
+- 回流和重绘：✅
+## Webpack
+- Webpack的理解：✅
+- 构建流程：✅
+- Loader和Plugin的区别：✅
+- 热更新原理：✅
+- 借助webpack优化前端性能：✅
+## 设计模式
+- 单例模式
+- 发布订阅模式
+- 观察者模式
+## HTTP
+- 强缓存和协商缓存： ✅
+- HTTPS加密过程： ✅
+- HTTPS加密算法
+- HTTP1.0/1.1/2.0区别
+- 常见请求方法
+- 常见请求头字段
+- TCP连接过程
+- HTTP和HTTPS区别： ✅
+## TypeScript
+
+===========
+
 ### 2023/03/22
 
 - [你是怎么理解 ES6 中 Proxy 的？使用场景?](./js/es6/proxy.js)
@@ -74,3 +147,4 @@
 - [ES6 中函数新增了哪些扩展?](./js/es6/function.js)
 - ES6 中新增的 Set、Map 两种数据结构怎么理解?
 - [你是怎么理解 ES6 中 Promise 的？使用场景？](./js/es6/promise.js)
+
