@@ -1,4 +1,4 @@
-const { printAnything } = require('../util')
+import { printAnything } from "../util.js"
 
 /**
  * Created by cooper on 2023/2/26.
@@ -34,22 +34,22 @@ function createArray(...rest) {
 }
 
 const a = createArray(1, 2, 3)
-
-let validator = {
-  set: function (target, p, value) {
-    if (p === 'x') {
-      if (!Number.isInteger(value)) {
-        throw new Error('只能设为数字')
-      } else if (value > 200) {
-        throw new Error('设置的数字不能超过200')
-      }
-    }
-    Reflect.set(target, p, value)
-  },
-}
-
-const obj1 = new Proxy({}, validator)
-obj1.x = 1
+//
+// let validator = {
+//   set: function (target, p, value) {
+//     if (p === 'x') {
+//       if (!Number.isInteger(value)) {
+//         throw new Error('只能设为数字')
+//       } else if (value > 200) {
+//         throw new Error('设置的数字不能超过200')
+//       }
+//     }
+//     Reflect.set(target, p, value)
+//   },
+// }
+//
+// const obj1 = new Proxy({}, validator)
+// obj1.x = 1
 // obj1.x = 2001
 // obj1.x = '1'
 
