@@ -15,7 +15,7 @@ interface Fish {
   swim(): void
 }
 
-function getName(animal: Cat | Fish) {
+function getAnimalName(animal: Cat | Fish) {
   return animal.name
 }
 
