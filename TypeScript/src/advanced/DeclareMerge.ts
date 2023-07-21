@@ -59,7 +59,7 @@ namespace DeclareMerge {
    * 与接口的合并相同？实际合并会报错？
    */
 
-  class A {
+  class B {
     name: string
     constructor(n: string) {
       this.name = n
