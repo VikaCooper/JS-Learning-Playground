@@ -9,6 +9,8 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@types/node": "^20.4.2"
+    "@types/lodash": "^4.14.195",
+    "@types/node": "^20.4.2",
+    "lodash": "^4.17.21"
   }
 }
