@@ -58,10 +58,22 @@ Function.prototype.bind = function () {
     return self.apply(context, [].concat.call(args, [].slice.call(arguments)))
   }
 }
-w
+
 const func2 = function (a, b, c, d) {
   console.log(this.name)
   console.log([a, b, c, d])
 }.bind(obj1, 1, 2)
 
 func2(3, 4)
+
+
+Function.prototype.call = function() {
+  const self = this
+  const target = arguments[0]
+  const args = Array(arguments).slice(1)
+  self.apply(target, args)
+
+  // target['tempCall'] = self
+  // target.tempCall(args)
+  // delete target['tempCall']
+}
